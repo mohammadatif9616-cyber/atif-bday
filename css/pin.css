@@ -1,0 +1,321 @@
+/* ==========================================
+   PREMIUM PIN PAGE
+   pin.css
+========================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top,#3b123f,#050816);
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+
+/* Background Glow */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+
+    height:400px;
+
+    background:#ff5ca8;
+
+    filter:blur(180px);
+
+    opacity:.25;
+
+}
+
+
+/* Main Card */
+
+.lock-container{
+
+    width:90%;
+
+    max-width:450px;
+
+    padding:50px 35px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:35px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.5);
+
+}
+
+
+/* Heart */
+
+.lock-heart{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+
+    animation:heartBeat 1.5s infinite;
+
+}
+
+
+/* Heading */
+
+.lock-container h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* Text */
+
+.lock-container p{
+
+    color:#ffdbea;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* PIN Input */
+
+#pinInput{
+
+    width:100%;
+
+    padding:18px;
+
+    border-radius:30px;
+
+    border:none;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:25px;
+
+    letter-spacing:12px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+
+#pinInput::placeholder{
+
+    color:#ddd;
+
+    letter-spacing:8px;
+
+}
+
+
+
+/* Button */
+
+button{
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #ff5ea8,
+        #ff8fc7
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 15px 35px rgba(255,94,168,.5);
+
+}
+
+
+/* Message */
+
+#message{
+
+    margin-top:20px;
+
+    font-size:16px;
+
+}
+
+
+
+/* Heart Animation */
+
+@keyframes heartBeat{
+
+
+0%{
+
+transform:scale(1);
+
+}
+
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+
+100%{
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+/* Mobile */
+
+@media(max-width:480px){
+
+
+.lock-container{
+
+padding:40px 20px;
+
+}
+
+
+.lock-container h1{
+
+font-size:45px;
+
+}
+
+
+.lock-heart{
+
+font-size:65px;
+
+}
+
+
+}
+
+/* Wrong PIN Shake */
+
+.shake{
+
+animation:shake .5s;
+
+}
+
+
+@keyframes shake{
+
+
+0%{
+
+transform:translateX(0);
+
+}
+
+
+25%{
+
+transform:translateX(-15px);
+
+}
+
+
+50%{
+
+transform:translateX(15px);
+
+}
+
+
+75%{
+
+transform:translateX(-15px);
+
+}
+
+
+100%{
+
+transform:translateX(0);
+
+}
+
+
+}
