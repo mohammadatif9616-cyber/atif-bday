@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beautiful Memories ❤️</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/gallery.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="gallery-bg"></div>
+
+
+<div class="gallery-container">
+
+
+<h1>
+Our Beautiful Memories ❤️
+</h1>
+
+
+<div class="gallery">
+
+    <img src="images/photo1.jpg" onclick="openImage(this)">
+
+    <img src="images/photo2.jpg" onclick="openImage(this)">
+
+    <img src="images/photo3.jpg" onclick="openImage(this)">
+
+    <img src="images/photo4.jpg" onclick="openImage(this)">
+
+    <img src="images/photo5.jpg" onclick="openImage(this)">
+
+</div>
+
+<button onclick="window.location.href='finale.html'">
+
+✨ Continue
+
+</button>
+
+<div id="imageViewer" onclick="closeImage()">
+    <img id="fullImage">
+</div>
+
+</div>
+
+
+
+<script src="js/gallery.js"></script>
+
+<div id="imageViewer" onclick="closeImage()">
+
+    <img id="fullImage">
+
+</div>
+
+
+</body>
+
+</html>

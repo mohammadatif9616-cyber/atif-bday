@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secret Envelopes ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="envelope-body">
+
+<h1>💌 Open My Secret Envelopes</h1>
+
+<div class="envelope-grid">
+
+<div class="envelope" onclick="openEnvelope(0)">
+📩
+<p>Envelope 1</p>
+</div>
+
+<div class="envelope" onclick="openEnvelope(1)">
+💌
+<p>Envelope 2</p>
+</div>
+
+<div class="envelope" onclick="openEnvelope(2)">
+📨
+<p>Envelope 3</p>
+</div>
+
+<div class="envelope" onclick="openEnvelope(3)">
+✉️
+<p>Envelope 4</p>
+</div>
+
+<div class="envelope" onclick="openEnvelope(4)">
+❤️
+<p>Final Envelope</p>
+</div>
+
+</div>
+
+<div id="popup" class="popup">
+
+<div class="popup-box">
+
+<p id="popupText"></p>
+
+<button onclick="closePopup()">
+Close
+</button>
+
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+<button onclick="location.href='certificate.html'">
+Next Surprise ❤️
+</button>
+</div>
+
+<script src="envelopes.js"></script>
+
+</body>
+</html>
