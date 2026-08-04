@@ -1,0 +1,1141 @@
+/* ==========================
+   GOOGLE FONTS
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:#fff;
+    overflow-x:hidden;
+    overflow-y:auto;
+    min-height:100vh;
+    position:relative;
+}
+
+/* ==========================
+BACKGROUND
+========================== */
+
+.background{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background:
+linear-gradient(135deg,#050816,#0d1b3d,#2d0b45,#590d82);
+
+background-size:400% 400%;
+
+animation:gradientMove 15s ease infinite;
+
+z-index:-4;
+
+}
+
+.overlay{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.35);
+
+backdrop-filter:blur(3px);
+
+z-index:-3;
+
+}
+
+/* ==========================
+STARS
+========================== */
+
+.stars{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background-image:
+
+radial-gradient(white 1px, transparent 1px);
+
+background-size:40px 40px;
+
+opacity:.35;
+
+animation:starsMove 60s linear infinite;
+
+z-index:-2;
+
+}
+
+/* ==========================
+MAIN CARD
+========================== */
+
+.container{
+
+width:90%;
+
+max-width:850px;
+
+padding:60px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.18);
+
+backdrop-filter:blur(25px);
+
+box-shadow:
+
+0 0 50px rgba(255,105,180,.15),
+
+0 20px 60px rgba(0,0,0,.4);
+
+text-align:center;
+
+}
+
+/* ==========================
+TEXT
+========================== */
+
+.subtitle{
+
+font-size:22px;
+
+letter-spacing:3px;
+
+color:#ffd6e8;
+
+margin-bottom:20px;
+
+text-transform:uppercase;
+
+}
+
+.title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:90px;
+
+color:white;
+
+text-shadow:
+
+0 0 15px #ff7ab6,
+
+0 0 35px #ff4da6;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+font-size:20px;
+
+color:#f5f5f5;
+
+margin-bottom:50px;
+
+}
+
+/* ==========================
+COUNTDOWN
+========================== */
+
+.countdown{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.box{
+
+width:130px;
+
+height:130px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:22px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+border:1px solid rgba(255,255,255,.15);
+
+transition:.35s;
+
+}
+
+.box:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+
+0 0 25px rgba(255,105,180,.5);
+
+}
+
+.box span{
+
+font-size:46px;
+
+font-weight:700;
+
+color:#ffffff;
+
+}
+
+.box p{
+
+margin-top:10px;
+
+font-size:16px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#ffc9de;
+
+}
+
+/* ==========================
+BOTTOM TEXT
+========================== */
+
+.bottom-text{
+
+margin-top:45px;
+
+font-size:18px;
+
+color:#ffe5ef;
+
+letter-spacing:1px;
+
+}
+
+/* ===========================
+LOADER
+=========================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#050816;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:opacity 1s ease;
+
+}
+
+.loader-content{
+
+text-align:center;
+
+color:white;
+
+}
+
+.loader-content .heart{
+
+font-size:70px;
+
+animation:heartbeat 1.2s infinite;
+
+margin-bottom:25px;
+
+}
+
+#typingText{
+
+font-family:'Great Vibes',cursive;
+
+font-size:48px;
+
+color:white;
+
+margin-bottom:30px;
+
+min-height:60px;
+
+}
+
+.loading-bar{
+
+width:300px;
+
+height:8px;
+
+background:rgba(255,255,255,.15);
+
+border-radius:20px;
+
+overflow:hidden;
+
+margin:auto;
+
+}
+
+.loading-progress{
+
+height:100%;
+
+width:0%;
+
+background:linear-gradient(90deg,#ff5ea8,#ff89c2);
+
+animation:loading 4s linear forwards;
+
+}
+
+.loader-content p{
+
+margin-top:20px;
+
+letter-spacing:2px;
+
+color:#ddd;
+
+}
+
+.hidden{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+/* ===========================================
+   PREMIUM BIRTHDAY WEBSITE
+   style.css (Part 1/3)
+=========================================== */
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:#fff;
+    overflow-x:hidden;
+    overflow-y:auto;
+    min-height:100vh;
+    position:relative;
+}
+/* ---------- BACKGROUND ---------- */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        #050816,
+        #121c3d,
+        #351046,
+        #6d136d
+    );
+
+    background-size:400% 400%;
+
+    z-index:-5;
+
+}
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(2px);
+
+    z-index:-4;
+
+}
+
+.stars{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px);
+
+    background-size:35px 35px;
+
+    opacity:.25;
+
+    z-index:-3;
+
+}
+
+/* ---------- LOADER ---------- */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#050816;
+
+    z-index:9999;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-heart{
+
+    font-size:75px;
+
+    margin-bottom:20px;
+
+}
+
+#loaderTitle{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:54px;
+
+    font-weight:400;
+
+    margin-bottom:30px;
+
+}
+
+.loader-text{
+
+    margin-top:20px;
+
+    letter-spacing:2px;
+
+    color:#dddddd;
+
+}
+
+.loading-bar{
+
+    width:320px;
+
+    max-width:90vw;
+
+    height:8px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    overflow:hidden;
+
+}
+
+.loading-progress{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #ff6fa8,
+        #ff95cb
+    );
+
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px 20px;
+}
+/* ---------- GLASS CARD ---------- */
+
+.glass-card{
+
+    width:min(900px,95%);
+
+    padding:60px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        0 0 30px rgba(255,105,180,.15);
+
+    text-align:center;
+
+}
+
+/* ---------- TEXT ---------- */
+
+.tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#ffd9ea;
+
+    margin-bottom:12px;
+
+}
+
+.title{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:88px;
+
+    font-weight:400;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+.description{
+
+    font-size:18px;
+
+    color:#ececec;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ===========================================
+   style.css (Part 2/3)
+=========================================== */
+
+/* ---------- COUNTDOWN ---------- */
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+    margin-top:45px;
+
+}
+
+.time-box{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.4s;
+
+    cursor:default;
+
+}
+
+.time-box:hover{
+
+    transform:translateY(-8px) scale(1.05);
+
+    border-color:#ff8fc4;
+
+    box-shadow:
+        0 0 35px rgba(255,105,180,.35);
+
+}
+
+.time-box span{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+.time-box small{
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:#ffd9ea;
+
+}
+
+/* ---------- MESSAGE ---------- */
+
+.bottom-message{
+
+    margin-top:45px;
+
+    font-size:18px;
+
+    color:#ffe7f2;
+
+    letter-spacing:1px;
+
+}
+
+/* ---------- MUSIC BUTTON ---------- */
+
+#musicBtn{
+
+    margin-top:35px;
+
+    padding:15px 34px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        135deg,
+        #ff5ea8,
+        #ff8dc5
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+        0 10px 25px rgba(255,94,168,.35);
+
+}
+
+#musicBtn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 35px rgba(255,94,168,.45);
+
+}
+
+/* ---------- FLOATING CONTAINERS ---------- */
+
+#hearts-container,
+#petals-container{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+/* ---------- CURSOR GLOW ---------- */
+
+#cursorGlow{
+
+    position:fixed;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    background:radial-gradient(
+        circle,
+        rgba(255,110,180,.25),
+        transparent 70%
+    );
+
+    z-index:1;
+
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff79b8;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#101424;
+
+}
+
+/* ===========================================
+   style.css (Part 3/3)
+   FINAL
+=========================================== */
+
+/* ---------- Decorative Glow ---------- */
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:250px;
+
+    height:250px;
+
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,.18),
+        transparent 70%
+    );
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.glass-card{
+    margin:40px auto;
+
+}
+
+/* ---------- Decorative Border ---------- */
+
+.glass-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:35px;
+
+    padding:1px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.25),
+        transparent,
+        rgba(255,255,255,.15)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+            mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+    background:#ff6cae;
+
+    color:white;
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+/* ---------- Utility ---------- */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.fade{
+
+    opacity:0;
+
+    transition:.6s;
+
+}
+
+.show{
+
+    opacity:1;
+
+}
+
+/* ---------- Footer Text ---------- */
+
+.credit{
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:13px;
+
+    color:rgba(255,255,255,.45);
+
+    letter-spacing:2px;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+    .glass-card{
+
+        padding:40px 25px;
+
+    }
+
+    .title{
+
+        font-size:62px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:650px){
+
+    body{
+
+        overflow:auto;
+
+    }
+
+    .countdown{
+
+        gap:14px;
+
+    }
+
+    .time-box{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+    .time-box span{
+
+        font-size:34px;
+
+    }
+
+    .description{
+
+        font-size:16px;
+
+    }
+
+    .bottom-message{
+
+        font-size:15px;
+
+    }
+
+    #musicBtn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .title{
+
+        font-size:48px;
+
+    }
+
+    .subtitle{
+
+        font-size:16px;
+
+    }
+
+    .tag{
+
+        font-size:12px;
+
+    }
+
+    .glass-card{
+
+        border-radius:25px;
+
+        padding:25px 18px;
+
+    }
+
+}
+
+/* PIN SECTION */
+
+#pinSection{
+    display:none;
+    width:100%;
+    margin-top:40px;
+    justify-content:center;
+}
+
+.pin-card{
+
+    max-width:500px;
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+}
+
+.pin-card input{
+
+    width:220px;
+
+    padding:15px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    border:none;
+
+    border-radius:15px;
+
+    outline:none;
+}
+
+.pin-card button{
+
+    margin-top:20px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+#pinMessage{
+
+    margin-top:15px;
+
+    color:#ffd6e8;
+}
