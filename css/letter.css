@@ -1,0 +1,256 @@
+/* ==========================================
+   PREMIUM LETTER PAGE
+   letter.css
+========================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    color:#3b2430;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+
+    padding:40px 0;
+
+}
+
+
+/* Background */
+
+.letter-bg{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2b0a25,
+        #8b315b,
+        #f3b7c9
+    );
+
+    z-index:-1;
+
+}
+
+
+
+/* Container */
+
+..letter-container{
+
+    width:90%;
+    max-width:850px;
+    margin:40px auto;
+
+}
+
+
+/* Paper */
+
+.paper{
+
+
+    background:#fff8f0;
+
+
+    padding:55px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.35);
+
+
+    animation:paperOpen 1.5s ease;
+
+
+    text-align:center;
+
+}
+
+
+
+@keyframes paperOpen{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+scale(.85)
+rotateX(20deg);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+scale(1)
+rotateX(0);
+
+}
+
+
+}
+
+
+
+
+/* Heading */
+
+.paper h1{
+
+
+font-family:'Great Vibes',cursive;
+
+
+font-size:65px;
+
+
+color:#b52b5c;
+
+
+margin-bottom:35px;
+
+
+}
+
+
+
+/* Letter Text */
+
+#letterText{
+
+
+font-size:18px;
+
+
+line-height:2;
+
+
+min-height:200px;
+
+
+text-align:left;
+
+
+color:#4b3440;
+
+
+}
+
+
+
+/* Button */
+
+
+.paper button{
+
+
+margin-top:35px;
+
+
+padding:15px 40px;
+
+
+border:none;
+
+
+border-radius:30px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#b52b5c,
+#ed6f9c
+);
+
+
+color:white;
+
+
+font-size:17px;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.paper button:hover{
+
+
+transform:translateY(-5px);
+
+
+box-shadow:
+
+0 15px 30px rgba(181,43,92,.4);
+
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+.paper{
+
+padding:30px 20px;
+
+}
+
+
+.paper h1{
+
+font-size:45px;
+
+}
+
+
+#letterText{
+
+font-size:15px;
+
+}
+
+
+}
