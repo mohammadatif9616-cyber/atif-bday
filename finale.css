@@ -1,0 +1,629 @@
+/* ==========================================
+   PREMIUM FINALE PAGE
+   finale.css
+========================================== */
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+
+body{
+
+min-height:100vh;
+
+font-family:'Poppins',sans-serif;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+overflow:auto;
+
+}
+
+
+
+/* Background */
+
+.finale-bg{
+
+position:fixed;
+
+inset:0;
+
+background:
+
+linear-gradient(
+135deg,
+#050816,
+#3d123f,
+#8b315b
+);
+
+z-index:-1;
+
+}
+
+
+
+/* Container */
+
+.finale-container{
+
+width:90%;
+
+max-width:800px;
+
+text-align:center;
+
+}
+
+
+
+/* Card */
+
+.finale-card{
+
+
+padding:45px;
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+backdrop-filter:blur(25px);
+
+
+border-radius:35px;
+
+
+border:
+
+1px solid rgba(255,255,255,.2);
+
+
+
+box-shadow:
+
+0 25px 70px rgba(0,0,0,.5);
+
+
+animation:showCard 1.5s ease;
+
+
+}
+
+
+
+@keyframes showCard{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+scale(.8)
+translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+scale(1)
+translateY(0);
+
+}
+
+
+}
+
+
+
+
+/* Image */
+
+.finale-card img{
+
+
+width:100%;
+
+
+max-height:450px;
+
+
+object-fit:cover;
+
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+/* Heading */
+
+.finale-card h1{
+
+
+margin-top:35px;
+
+
+font-family:'Great Vibes',cursive;
+
+
+font-size:75px;
+
+
+font-weight:400;
+
+
+text-shadow:
+
+0 0 30px #ff80b9;
+
+
+}
+
+
+
+.finale-card h2{
+
+
+margin-top:25px;
+
+
+color:#ffd7e8;
+
+
+font-size:25px;
+
+
+}
+
+
+
+.finale-card p{
+
+
+margin-top:20px;
+
+
+line-height:1.8;
+
+
+font-size:17px;
+
+
+color:#f8e8ef;
+
+
+}
+
+
+
+
+/* Button */
+
+.finale-card button{
+
+
+margin-top:35px;
+
+
+padding:16px 45px;
+
+
+border:none;
+
+
+border-radius:40px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#ff5ea8,
+#ff95c8
+);
+
+
+
+color:white;
+
+
+font-size:17px;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.finale-card button:hover{
+
+
+transform:translateY(-5px);
+
+
+box-shadow:
+
+0 15px 35px rgba(255,94,168,.5);
+
+
+}
+
+
+
+/* Final Message */
+
+#finalMessage{
+
+
+margin-top:30px;
+
+
+font-size:22px;
+
+
+color:#ffe0ed;
+
+
+font-family:'Great Vibes',cursive;
+
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+.finale-card{
+
+padding:25px;
+
+}
+
+
+.finale-card h1{
+
+font-size:50px;
+
+}
+
+
+.finale-card h2{
+
+font-size:18px;
+
+}
+
+
+.finale-card p{
+
+font-size:15px;
+
+}
+
+
+}
+
+/* Floating Heart Animation */
+
+@keyframes heartUp{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================
+   SECRET ENVELOPE
+========================== */
+
+
+.envelope{
+
+margin-top:35px;
+
+padding:25px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:25px;
+
+cursor:pointer;
+
+transition:.4s;
+
+font-size:45px;
+
+}
+
+
+.envelope p{
+
+font-size:18px;
+
+margin-top:10px;
+
+}
+
+
+.envelope:hover{
+
+transform:scale(1.05);
+
+}
+
+
+#secretMessage{
+
+display:none;
+
+margin-top:25px;
+
+padding:25px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.15);
+
+font-size:20px;
+
+}
+
+/* ==========================
+   MEMORY CERTIFICATE
+========================== */
+
+.certificate{
+
+display:none;
+
+margin-top:40px;
+
+padding:30px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.3);
+
+}
+
+
+.certificate h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+
+.certificate p{
+
+line-height:1.7;
+
+}
+
+
+.certificate h3{
+
+margin:20px 0;
+
+font-size:28px;
+
+}
+
+
+.seal{
+
+display:inline-block;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.15);
+
+margin-top:15px;
+
+} 
+
+/* Certificate Animation */
+
+.certificate{
+
+animation: certificateShow 1s ease;
+
+}
+
+
+@keyframes certificateShow{
+
+from{
+
+opacity:0;
+
+transform:scale(.7) translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1) translateY(0);
+
+}
+
+}
+
+/* ==========================
+   GIFT BOX
+========================== */
+
+.gift-box{
+
+margin-top:40px;
+
+padding:25px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:25px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-size:50px;
+
+}
+
+.gift-box:hover{
+
+transform:scale(1.05);
+
+}
+
+.gift-box p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+#giftMessage{
+
+display:none;
+
+margin-top:25px;
+
+padding:30px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.15);
+
+animation:certificateShow 1s ease;
+
+}
+
+#giftMessage h2{
+
+margin-bottom:15px;
+
+font-family:'Great Vibes',cursive;
+
+font-size:42px;
+
+}
+
+/* ==========================
+   FINAL NOTE
+========================== */
+
+.final-note{
+
+margin-top:50px;
+
+padding-top:25px;
+
+border-top:1px solid rgba(255,255,255,.2);
+
+font-size:18px;
+
+color:#ffd9e8;
+
+font-style:italic;
+
+line-height:1.8;
+
+opacity:.9;
+
+animation:fadeUp 2s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
